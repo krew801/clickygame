@@ -1,0 +1,61 @@
+[{
+    "id": 1,
+    "image": "./assets/images/photo-1542751371-adc38448a05e.jpeg",
+    "clicked": false
+},
+{
+    "id": 2,
+    "image": "./assets/images/photo-1543376603-d85608c2e47b.jpeg",
+    "clicked": false
+},
+{
+    "id": 3,
+    "image": "./assets/images/photo-1551103782-8ab07afd45c1.jpeg",
+    "clicked": false
+},
+{
+    "id": 4,
+    "image": "./assets/images/photo-1560291543-ed9726c81c08.jpeg",
+    "clicked": false
+},
+{
+    "id": 5,
+    "image": "./assets/images/photo-1562514947-bf9cf8e45d4a.jpeg",
+    "clicked": false
+},
+{
+    "id": 6,
+    "image": "./assets/images/photo-1493711662062-fa541adb3fc8.jpeg",
+    "clicked": false
+},
+{
+    "id": 7,
+    "image": "./assets/images/photo-1494666144702-70d86c6cf884.jpeg",
+    "clicked": false
+},
+{
+    "id": 8,
+    "image": "./assets/images/photo-1525540810550-5032f5d191b1.jpeg",
+    "clicked": false
+},
+{
+    "id": 9,
+    "image": "./assets/images/photo-1529154691717-3306083d869e.jpeg",
+    "clicked": false
+},
+{
+    "id": 10,
+    "image": "./assets/images/photo-1566576912289-cc48894ec413.jpeg",
+    "clicked": false
+},
+{
+    "id": 11,
+    "image": "./assets/images/photo-1574083387054-69e6ff5945bb.jpeg",
+    "clicked": false
+},
+{
+    "id": 12,
+    "image": "./assets/images/photo-1574758519652-904df1f8df4c.jpeg",
+    "clicked": false
+}
+]
