@@ -24,11 +24,12 @@ class App extends Component {
         // Make a copy of the state matches array to work with
         const matches = this.state.matches;
 
-        // Filter for the clicked match
+        // This will filter for the clicked match.
         const clickedMatch = matches.filter(match => match.id === id);
 
-        // If the matched image's clicked value is already true, 
-        // do the game over actions
+
+        //If the image has a value of 'true' and has been clicked already
+        //it will start the game over status
         if (clickedMatch[0].clicked){
 
             console.log ("Correct Guesses: " + correctGuesses);
@@ -45,39 +46,39 @@ class App extends Component {
             this.setState({ correctGuesses });
             this.setState({matches});
 
-        // Otherwise, if clicked = false, and the user hasn't finished
+        // If clicked = false, and the player hasn't finished
         } else if (correctGuesses < 11) {
 
-            // Set its value to true
+            // This will set it's value to ture
             clickedMatch[0].clicked = true;
 
-            // increment the appropriate counter
+            // Will increase the counter if correct.
             correctGuesses++;
             
-            clickMessage = "Great! You haven't click on that one yet! Keep going!";
+            clickMessage = "That's Correct! Keep Going!";
 
             if (correctGuesses > bestScore){
                 bestScore = correctGuesses;
                 this.setState({ bestScore });
             }
 
-            // Shuffle the array to be rendered in a random order
+            // Will shuffle array and put it into a random order.
             matches.sort(function(a, b){return 0.5 - Math.random()});
 
-            // Set this.state.matches equal to the new matches array
+            // This will set this.state.matches to equal the new matches array
             this.setState({ matches });
             this.setState({correctGuesses});
             this.setState({clickMessage});
         } else {
 
-            // Set its value to true
+            // Sets value to true
             clickedMatch[0].clicked = true;
 
-            // restart the guess counter
+            // This will reset the guess counter
             correctGuesses = 0;
 
-            // Egg on the user to play again
-            clickMessage = "WOW!!! You got ALL of them!!! Now, let's see if you can do it again!";
+            // Continue game message
+            clickMessage = "Congratulations, you guessed them all correctly! Try again!";
             bestScore = 12;
             this.setState({ bestScore });
             
@@ -85,10 +86,10 @@ class App extends Component {
                 matches[i].clicked = false;
             }
 
-            // Shuffle the array to be rendered in a random order
+            // This will shuffle the array to be rendered in a new random order
             matches.sort(function(a, b){return 0.5 - Math.random()});
 
-            // Set this.state.matches equal to the new matches array
+            // This will set this.state.matches equal to the new matches array
             this.setState({ matches });
             this.setState({correctGuesses});
             this.setState({clickMessage});
@@ -99,7 +100,7 @@ class App extends Component {
     render() {
         return (
             <Wrapper>
-                <Title>Clickity Clack Movie Game</Title>
+                <Title>Video Game Image Click Game</Title>
         
                 <h3 className="scoreSummary">
                     {this.state.clickMessage}
