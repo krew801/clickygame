@@ -9,7 +9,7 @@
 .card>.img-container {
     overflow: hidden;
     text-align: center;
-    background: black;
+    background: rgb(55, 55, 59);
     justify-content: center;  
     margin: 20px;   
 }
