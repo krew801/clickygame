@@ -7,7 +7,7 @@ import "./App.css";
 
 let correctGuesses = 0;
 let bestScore = 0;
-let clickMessage = "Click on a movie poster to gain points! Click on the same one twice and you lose!";
+let clickMessage = "Click on a video game picture to gain points, but make sure you don't click the same one twice!";
 
 class App extends Component {
     
@@ -36,7 +36,7 @@ class App extends Component {
             console.log ("Best Score: " + bestScore);
 
             correctGuesses = 0;
-            clickMessage = "Bummer! You already clicked on this one."
+            clickMessage = "Oops, you already guessed that one. Try again!"
 
             for (let i = 0 ; i < matches.length ; i++){
                 matches[i].clicked = false;
@@ -99,6 +99,7 @@ class App extends Component {
 
     render() {
         return (
+          
             <Wrapper>
                 <Title>Video Game Image Click Game</Title>
         
