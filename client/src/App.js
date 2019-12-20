@@ -5,6 +5,8 @@ import Title from "./components/Title";
 import matches from "./matchcards.json";
 import "./App.css";
 
+const heroku = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+
 let correctGuesses = 0;
 let bestScore = 0;
 let clickMessage = "Click on a video game picture to gain points, but make sure you don't click the same one twice!";
